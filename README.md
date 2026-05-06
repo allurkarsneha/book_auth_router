@@ -1,17 +1,25 @@
-# book_auth_router
+# HW4 Book Auth Router
 
-A new Flutter project.
+This Flutter app implements the HW4 authentication and routing flow using `AuthenticationBloc`, `GoRouter`, `ShellRoute`, and redirect logic.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Login and logout flow
+- Authentication-based redirect
+- `AuthenticationBloc` placed above `MaterialApp.router`
+- `RefreshListenable` created from the authentication stream
+- `ShellRoute` for the main pages
+- Bottom navigation for By Author, By Title, and Profile
+- Books sorted by author
+- Books sorted by title
+- Book detail page
 
-A few resources to get you started if this is your first Flutter project:
+## Routes
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```text
+/login
+/byAuthor
+/byAuthor/detail
+/byTitle
+/byTitle/detail
+/profile
